@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/footer.scss","../sass/mixinFuncs.scss","../sass/variables.scss"],"names":[],"mappings":"AAGA;EACI;;AACF;EACE;ECMA;EACA,gBDNyB;ECOzB,iBDP8B;ECQ9B,aDR4C;ECS5C;EDRA;;AACA;EACI;EACA;;AAEJ;ECDA;EACA,gBDC6B;ECA7B;EACA,aDD4C;ECE5C;EDDI;;AAQA;EACJ,kBEtBU;EFwBF","file":"footer.css"}

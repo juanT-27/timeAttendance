@@ -1,0 +1,32 @@
+@use "variables";
+
+@mixin container($backgroundColor, $mx, $my){
+    background-color: $backgroundColor;
+    margin:$mx $my;
+    }
+
+@mixin marginCenter{
+    margin: auto 0;
+}
+
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction ;
+    justify-content: $justify;
+    align-items: $align;
+    gap: 2rem;
+}
+
+@mixin image-background($imageUrl){
+    background-image: url($imageUrl);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin image-pattern{
+    background-image: radial-gradient(variables.$color-dark 1px, transparent 1px);
+    background-size:  15px 15px;
+    background-color: #ffffff;
+    
+}

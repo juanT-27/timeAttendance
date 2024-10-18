@@ -1,0 +1,19 @@
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, label {
+  font-family: Kanit, sans-serif;
+  font-weight: 700;
+}
+
+p, li, a, button, .btn, ul, span {
+  font-family: Afacad Flux, sans-serif;
+}
+
+.btn {
+  background-color: #081452;
+}
+
+/*# sourceMappingURL=reset.css.map */

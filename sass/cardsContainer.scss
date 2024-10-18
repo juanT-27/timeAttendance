@@ -1,0 +1,8 @@
+@use "mixinFuncs";
+@use "variables";
+
+.cardsContainer{
+    .card{
+     width: 15rem;
+    }
+}

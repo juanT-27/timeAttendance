@@ -1,0 +1,23 @@
+@use "variables";
+@use "mixinFuncs";
+@use "reset";
+@use "navbar";
+@use "hero";
+@use "cardsContainer";
+@use "footer";
+
+main{
+ 
+    @include mixinFuncs.flex(column, center, center);
+    border: 2px solid black;
+    min-width: 15rem;
+}
+
+.container{
+    @include mixinFuncs.container(variables.$color-dark, 0.5rem, 0);
+    color: variables.$color-light;
+}
+
+.container-fluid{
+    @include mixinFuncs.container(#fff, 0rem, 0rem);
+}

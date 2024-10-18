@@ -1,0 +1,32 @@
+@use "mixinFuncs";
+@use "variables";
+
+footer{
+    border-top: 2px solid black;
+  .contactInfo{
+    margin-top: 1rem;
+    @include mixinFuncs.flex(row, space-around, center);
+    flex-wrap: wrap;
+    .logo-container{
+        width: 3rem;
+        height: 3rem;
+    }
+    .contactInfoText{
+        @include mixinFuncs.flex(column,center, center);
+        gap: 0;
+    }
+    
+  }  
+
+  .accordion{
+    .accordion-item{
+
+        .accordion-button{
+    background-color: variables.$color-light;
+
+            padding: 2px;
+        }
+    }
+}
+}
+
