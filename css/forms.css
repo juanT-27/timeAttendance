@@ -1,0 +1,68 @@
+.signUpSection {
+  justify-content: center;
+}
+.signUpSection .stepsContainer {
+  margin: 2rem 0 0 0;
+  padding: 3rem 0;
+  background-image: url("/images/bg-sidebar-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.signUpSection .stepsContainer .step-item {
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.signUpSection .stepsContainer .step-item .btn {
+  width: 0.5rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #fff;
+}
+.signUpSection .stepsContainer .step-item .btn:hover {
+  background-color: #fff;
+  color: #081452;
+}
+.signUpSection .stepsContainer .step-item p {
+  display: none;
+}
+.signUpSection .formContainer {
+  padding: 1rem 0;
+  color: black;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.signUpSection .formContainer .formInformation {
+  width: 80%;
+  text-align: center;
+}
+.signUpSection .formContainer .inputGroup {
+  width: 80%;
+  margin: 0 0 0 0;
+}
+.signUpSection .formContainer .inputGroup label {
+  font-weight: 400;
+  color: #081452;
+}
+.signUpSection .formContainer .inputGroup input {
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=forms.css.map */

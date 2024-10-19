@@ -1,0 +1,56 @@
+@use "variables";
+@use "mixinFuncs";
+
+.signUpSection {
+  justify-content: center;
+  .stepsContainer {
+    margin: 2rem 0 0 0;
+    padding: 3rem 0;
+    
+    @include mixinFuncs.image-background("/images/bg-sidebar-mobile.svg");
+    
+    @include mixinFuncs.flex(row, space-around, center);
+    .step-item {
+      width: 3rem;
+     
+      @include mixinFuncs.flex(column, center, center);
+      
+      .btn {
+        width: 0.5rem;
+        padding: 0 1rem;
+      @include mixinFuncs.flex(column, center, center);
+        color: #fff;
+      }
+
+      .btn:hover{
+        background-color: #fff;
+        color: variables.$color-dark;
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
+  .formContainer {
+    padding: 1rem 0;
+    color: black;
+    background-color: #fff;
+    @include mixinFuncs.flex(column, center, center);
+            .formInformation{
+                width: 80%;
+                text-align: center;
+            }
+    .inputGroup{
+        width: 80%;
+        margin: 0 0 0 0;
+        label{
+            font-weight: 400;
+            color: variables.$color-dark;
+        }
+        input{
+            font-weight: 100;
+        }
+    }
+  }
+}
