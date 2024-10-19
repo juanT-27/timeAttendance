@@ -58,48 +58,104 @@
           </ul>
         </div>
       </nav>
-      <section class="container  row signUpSection ">
+      <section class="container row signUpSection">
         <div class="stepsContainer col-12 col-md-6">
-            <div class="step-item">
-              <button class="btn">1</button>
-              <p class="sub-text">first step</p>
-              <p class="">Your information</p>
-            </div>
-            <div class="step-item">
-              <button class="btn">2</button>
-              <p class="sub-text">Second step</p>
-              <p class="">Plans</p>
-            </div>
-            <div class="step-item">
-              <button class="btn">3</button>
-              <p class="sub-text">Last step</p>
-              <p class="">Summary</p>
-            </div>
+          <div class="step-item">
+            <button class="btn">1</button>
+            <p class="sub-text">first step</p>
+            <p class="">Your information</p>
+          </div>
+          <div class="step-item">
+            <button class="btn">2</button>
+            <p class="sub-text">Second step</p>
+            <p class="">Plans</p>
+          </div>
+          <div class="step-item">
+            <button class="btn">3</button>
+            <p class="sub-text">Last step</p>
+            <p class="">Summary</p>
+          </div>
         </div>
-
-        
-          <form action="" class="formContainer col-12 col-md-6">
-            
-            <div class="inputGroup">
-              <label for="">Full name</label>
-              <input type="text" id="fullName" name="fullName" placeholder="Homer Simpson">
-            </div>
-    
-            <div class="inputGroup">
-              <label for="emailAddress">Email</label>
-              <input type="email" id="emailAddress" name="emailAddress" placeholder="homer@gmail.com">
-            </div>
-    
-            <div class="inputGroup">
-              <label for="phoneNum">Phone</label>
-              <input type="number" id="phoneNum" name="phoneNum" placeholder="3196187231">
-            </div>
-
-            <input type="submit" value="Next">
-          </form>
-     
+        <div class="formContainer col-12 col-md-6"></div>
       </section>
-      
+
+      <template id="informationForm">
+        <form action="" class="formContainer col-12 col-md-6" id="formActive">
+          <div class="formInformation">
+            <h3>Account info</h3>
+            <p>
+              please provide your full name, phone, email and a new password.
+            </p>
+          </div>
+
+          <div class="inputGroup">
+            <label for="">Full name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Homer Simpson"
+            />
+          </div>
+
+          <div class="inputGroup">
+            <label for="emailAddress">Email</label>
+            <input
+              type="email"
+              id="emailAddress"
+              name="emailAddress"
+              placeholder="homer@gmail.com"
+            />
+          </div>
+
+          <div class="inputGroup">
+            <label for="phoneNum">Phone</label>
+            <input
+              type="number"
+              id="phoneNum"
+              name="phoneNum"
+              placeholder="3196187231"
+            />
+          </div>
+
+          <input type="submit" value="Next" id="submit-Info" />
+        </form>
+      </template>
+
+      <template id="planForm">
+        <form action="" class="formContainer col-12 col-md-6">
+          <div class="inputGroup">
+            <div class="categoryImg">
+              <img src="/images/icon-arcade.svg" alt="" />
+            </div>
+            <span>10 - 20 employes </span>
+            <label for="basicPlan">Basic plan</label>
+
+            <input type="checkbox" id="basicPlan" value="basic" />
+          </div>
+
+          <div class="inputGroup">
+            <div class="categoryImg">
+              <img src="/images/icon-advanced.svg" alt="" />
+            </div>
+            <span>20 - 100 employes </span>
+            <label for="basicPlan">Advance plan</label>
+            <input type="checkbox" id="basicPlan" value="basic" />
+          </div>
+
+          <div class="inputGroup">
+            <div class="categoryImg">
+              <img src="/images/icon-pro.svg" alt="" />
+            </div>
+            <span>10 - 20 employes </span>
+            <label for="basicPlan">Pro plan</label>
+            <input type="checkbox" id="basicPlan" value="basic" />
+          </div>
+          <input type="submit" value="finish">
+        </form>
+      </template>
+
+      <template id="suscriptionSummarise"> </template>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -110,5 +166,6 @@
       src="https://kit.fontawesome.com/cf733db6d2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="signup.js"></script>
   </body>
 </html>

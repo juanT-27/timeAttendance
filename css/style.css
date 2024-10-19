@@ -130,20 +130,44 @@ p, li, a, button, .btn, ul, span {
   align-items: center;
   gap: 2rem;
 }
-.signUpSection .formContainer .formInformation {
+.signUpSection .formContainer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.signUpSection .formContainer form .formInformation {
   width: 80%;
   text-align: center;
 }
-.signUpSection .formContainer .inputGroup {
+.signUpSection .formContainer form .inputGroup {
   width: 80%;
   margin: 0 0 0 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  gap: 0;
+  -webkit-box-shadow: -1px -2px 23px -2px rgb(45, 65, 125);
+  -moz-box-shadow: -1px -2px 23px -2px rgb(45, 65, 125);
+  box-shadow: -1px -2px 23px -2px rgb(45, 65, 125);
+  transition: 500ms ease-in-out all;
 }
-.signUpSection .formContainer .inputGroup label {
+.signUpSection .formContainer form .inputGroup label {
   font-weight: 400;
   color: #081452;
 }
-.signUpSection .formContainer .inputGroup input {
+.signUpSection .formContainer form .inputGroup input {
   font-weight: 100;
+}
+.signUpSection .formContainer form .inputGroup .categoryImg {
+  width: 2rem;
+}
+.signUpSection .formContainer form .inputGroup:hover {
+  width: 85%;
 }
 
 footer {
